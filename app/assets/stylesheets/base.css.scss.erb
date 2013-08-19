@@ -7,7 +7,12 @@ body {
 	height: 100%;
 }
 
+section {
+	border-bottom: 1px solid gray;
+}
+
 .main-section {
+	height: 800px;
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -24,7 +29,7 @@ body {
 	width: 100%;
 	z-index: 1;
 	opacity: 0.6;
-	position: fixed;
+	position: absolute;
 	background-color: #FEFEFE;
 	top: 37%;
 }
@@ -37,4 +42,42 @@ body {
 	left: 5px;
 	font-size: 90px;
 	font-variant: small-caps;
+}
+
+.team-section {
+	background-color: #161616;
+}
+
+.team-section-title {
+	margin: 0px auto;
+	color: white;
+	font-size: 35px;
+	width: 226px;
+	font-family: 'Cinzel', serif;
+	letter-spacing: 4.0px;
+	font-variant: small-caps;
+	padding-top: 30px;
+}
+
+.photo-port {
+	padding: 2px;
+	width: 120px;
+	height: 120px;
+	border: 2px solid #f0f0f0;
+	border-radius: 100px;
+	display: inline-block;
+	margin-right: 55px;
+}
+
+.photo-container {
+	width: 940px;
+	margin: 0px auto;
+	margin-top: 45px;
+	margin-bottom: 90px;
+}
+
+.photo {
+	width: 120px;
+	height: 120px;
+	border-radius: 64px;
 }
