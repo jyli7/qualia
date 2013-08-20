@@ -34,6 +34,16 @@ section {
 	top: 37%;
 }
 
+.section {
+	&.black {
+		background-color: #18181C;
+	}
+
+	&.white {
+		background-color: #ffffff;
+	}
+}
+
 .title {
 	font-family: 'Cinzel', serif;
 	text-align: center;
@@ -44,19 +54,22 @@ section {
 	font-variant: small-caps;
 }
 
-.team-section {
-	background-color: #18181C;
-}
-
-.team-section-title {
+.section-title {
 	margin: 0px auto;
-	color: white;
-	font-size: 55px;
+	font-size: 45px;
 	width: 456px;
 	font-family: 'Raleway', serif;
 	font-weight: 200;
 	letter-spacing: 11px;
-	padding: 75px 0px 25px 0;
+	padding: 75px 0px 35px 0;
+
+	&.white {
+		color: white;
+	}
+
+	&.black {
+		color: black;
+	}
 }
 
 .team-description {
@@ -88,7 +101,7 @@ section {
 .photo-container {
 	width: 876px;
 	margin: 0px auto;
-	margin-top: 55px;
+	margin-top: 50px;
 	margin-bottom: 90px;
 }
 
@@ -96,4 +109,18 @@ section {
 	width: 120px;
 	height: 120px;
 	border-radius: 64px;
+}
+
+.clients-container {
+	width: 700px;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.client-link {
+	width: 170px;
+	margin-right: 70px;
+	&:nth-child(3n) {
+		margin-right: 0px
+	}
 }
