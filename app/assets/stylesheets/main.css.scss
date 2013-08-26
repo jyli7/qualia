@@ -1,3 +1,11 @@
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
 .ui-tooltip {
   background: black;
   color: white;
@@ -19,6 +27,15 @@
 }
 
 .ui-tooltip-content {
-    position: relative;
-    padding: 10px 5px 5px 10px;
+  position: relative;
+  padding: 10px 5px 5px 10px;
+}
+
+.photo-port {
+	position: relative;
+	@include transition(bottom 0.2s linear);
+	&.hovered {
+		bottom: 10px;
+		@include transition(bottom 0.2s linear);
+	}
 }
