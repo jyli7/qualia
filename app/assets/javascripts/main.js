@@ -1,4 +1,10 @@
 $(function () {
+	$('.header-menu a').on('click', function (e) {
+		e.preventDefault();
+		var sectionName = $(this).data('section');
+		$('html, body').animate({scrollTop: $('#' + sectionName).offset().top}, 500);
+	});
+
 	$('.photo-port').on('mouseenter', function () {
 		$(this).addClass('hovered');
 	});

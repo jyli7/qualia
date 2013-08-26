@@ -1,22 +1,22 @@
 <header>
 	<div class="row">
 		<ul class="header-menu">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Clients</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#" data-section="home">Home</a></li>
+			<li><a href="#" data-section="about-us">About Us</a></li>
+			<li><a href="#" data-section="clients">Clients</a></li>
+			<li><a href="#" data-section="contact">Contact</a></li>
 			<li class="contact-info"><a href="mailto:contact@meetqualia.com">contact@meetqualia.com</a></li>
 		</ul>
 	</div>
 </header>
 
-<section class="main-section">
+<section class="main-section" id="home">
 	<div class="title-bar">
 		<div class="title">Qualia | Studios</div>
 	</div>
 </section>
 
-<section class="team-section section black">
+<section class="team-section section black" id="about-us">
 	<div class="team-section-title section-title white">
 		Who are we?
 	</div>
@@ -32,16 +32,24 @@
 	</div>
 </section>
 
-<section class="client-section section">
+<section class="client-section section" id="clients">
 	<div class="client-section-title section-title black">
 		Select Clients
 	</div>
 	<div class="clients-container">
-		<img class="client-link" src="http://mobispoke.com/wp-content/uploads/2013/06/bose.png" alt="Bose">
-		<img class="client-link" src="http://mobispoke.com/wp-content/uploads/2013/06/bose.png" alt="Bose">
-		<img class="client-link" src="http://mobispoke.com/wp-content/uploads/2013/06/bose.png" alt="Bose">
-		<img class="client-link" src="http://mobispoke.com/wp-content/uploads/2013/06/bose.png" alt="Bose">
-		<img class="client-link" src="http://mobispoke.com/wp-content/uploads/2013/06/bose.png" alt="Bose">
-		<img class="client-link" src="http://mobispoke.com/wp-content/uploads/2013/06/bose.png" alt="Bose">
+		<img class="client-link" src="<%= asset_path('stanford.png')%>" alt="Stanford">
+		<img class="client-link" src="<%= asset_path('stanford.png')%>" alt="Stanford">
+		<img class="client-link" src="<%= asset_path('stanford.png')%>" alt="Stanford">
+		<img class="client-link" src="<%= asset_path('codecademy.png')%>" alt="Codecademy">
+		<img class="client-link" src="<%= asset_path('codecademy.png')%>" alt="Codecademy">
+		<img class="client-link" src="<%= asset_path('codecademy.png')%>" alt="Codecademy">
+	</div>
+</section>
+
+<section class="client-section section" id="contact">
+	<div class="client-section-title section-title black">
+		Select Clients
+	</div>
+	<div class="clients-container">
 	</div>
 </section>

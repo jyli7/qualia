@@ -1,3 +1,11 @@
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
 html {
 	height: 100%;
 }
@@ -92,7 +100,7 @@ header {
 }
 
 .section {
-	padding: 130px 0 140px 0;
+	padding: 125px 0 140px 0;
 	&.black {
 		background-color: #18181C;
 	}
@@ -177,7 +185,29 @@ header {
 .client-link {
 	width: 170px;
 	margin-right: 70px;
+	margin-top: 10px;
+	margin-bottom: 25px;
 	&:nth-child(3n) {
 		margin-right: 0px
+	}
+}
+
+
+.header-menu {
+	a {
+		@include transition(color 0.2s linear);
+		&:hover {
+			color: #B8B8B8;
+			@include transition(color 0.2s linear);
+		}
+	}
+}
+
+.photo-port {
+	position: relative;
+	@include transition(bottom 0.2s linear);
+	&.hovered {
+		bottom: 10px;
+		@include transition(bottom 0.2s linear);
 	}
 }
