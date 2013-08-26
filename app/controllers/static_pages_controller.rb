@@ -21,7 +21,7 @@ class StaticPagesController < ApplicationController
   			image: "sunil.jpg",
   			desc: "Sunil worked on machine learning and statistics at the NSA and as a Fulbright Scholar at the University of Waterloo. Now he works on data science in R and backend development in Clojure and Python. He studied math at Oxford and statistics at Cambridge."
   		}
-  	]
+  	].shuffle
   end
 
   def about
