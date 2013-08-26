@@ -23,7 +23,7 @@ class StaticPagesController < ApplicationController
   		},
       { name: "Stephen Dagadakis",
         image: "stephen.png",
-        desc: ""
+        desc: "Stephen does web development in Washington, D.C.  Previously, he programmed a PHP-based geospatial social network, did virtual reality research, and served as Deputy Executive Director of a leadership office in the U.S. Congress."
       }
   	].shuffle
   end
