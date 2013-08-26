@@ -24,21 +24,11 @@
 		We are a group of passionate web developers committed to bringing your ideas to life. We work across technologies and platforms - from Rails/Javascript to Android/iOS, and everything in between.
 	</div>
 	<div class="photo-container">
-		<div class="photo-port">
-			<a href="#"><img class="photo" src=<%= asset_path "jimmy.jpg" %>></a>
-		</div>
-		<div class="photo-port">
-			<a href="#"><img class="photo" src=<%= asset_path "lauren.jpg" %>></a>
-		</div>
-		<div class="photo-port">
-			<a href="#"><img class="photo" src=<%= asset_path "pedro.jpg" %>></a>
-		</div>
-		<div class="photo-port">
-			<a href="#"><img class="photo" src=<%= asset_path "alyssa.jpg" %>></a>
-		</div>
-		<div class="photo-port">
-			<a href="#"><img class="photo" src=<%= asset_path "sunil.png" %>></a>
-		</div>
+		<% @team_members.each do |member| %>
+			<div class="photo-port" title="" data-name="<%= member[:name] %>" data-desc="<%= member[:desc] %>">
+				<a href="#"><img class="photo" src="<%= asset_path member[:image] %>"></a>
+			</div>
+		<% end %>
 	</div>
 </section>
 
