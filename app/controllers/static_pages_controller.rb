@@ -20,7 +20,11 @@ class StaticPagesController < ApplicationController
   		{ name: "Sunil Abraham",
   			image: "sunil.png",
   			desc: "Sunil worked on machine learning and statistics at the NSA and as a Fulbright Scholar at the University of Waterloo. Now he works on data science in R and backend development in Clojure and Python. He studied math at Oxford and statistics at Cambridge."
-  		}
+  		},
+      { name: "Stephen Dagadakis",
+        image: "stephen.png",
+        desc: ""
+      }
   	].shuffle
   end
 
