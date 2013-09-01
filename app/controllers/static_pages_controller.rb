@@ -7,15 +7,15 @@ class StaticPagesController < ApplicationController
   		},
   		{ name: "Lauren Sperber",
   			image: "lauren.jpg",
-  			desc: ""
+  			desc: "Lauren is a front-end developer specializing in JavaScript, CSS, and Rails. She previously worked as a product manager at Aol/Patch and Outside.in and studied literature at Georgetown and NYU."
   		},
   		{ name: "Pedro Moura",
   			image: "pedro.jpg",
-  			desc: ""
+  			desc: "Pedro specializes in Ruby, Python, Javascript, and php and has deep experience with a host of web frameworks. Before co-founding Qualia, he was the sole developer at Driver Digital and studied philosophy at Harvard."
   		},
   		{ name: "Alyssa Frazee",
   			image: "alyssa.jpg",
-  			desc: ""
+  			desc: "Alyssa works in data science, primarily programming in R and Python.  She studied math at St. Olaf College and is currently working in the area of computational biology while finishing her PhD in biostatistics at Johns Hopkins University."
   		},
   		{ name: "Sunil Abraham",
   			image: "sunil.png",
