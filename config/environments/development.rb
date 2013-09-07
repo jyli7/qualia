@@ -31,7 +31,7 @@ Qualia::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 25,
-    domain: "example.com",
+    domain: "meetqualia.com",
     authentication: "plain",
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"]
