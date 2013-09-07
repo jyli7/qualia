@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @contact_form = ContactForm.new
   	@team_members = [
   		{ name: "Jimmy Li",
   			image: "jimmy.jpg",

@@ -50,6 +50,10 @@
 	<div class="client-section-title section-title black">
 		Contact Us
 	</div>
-	<div class="clients-container">
-	</div>
+
+	<%= simple_form_for @contact_form do |f| %>
+		<%= f.input :name, :required => true %>
+		<%= f.button :submit, "Send message" %>
+	<% end %>
+	
 </section>
