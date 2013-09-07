@@ -46,13 +46,16 @@
 	</div>
 </section>
 
-<section class="client-section section" id="contact">
-	<div class="client-section-title section-title black">
+<section class="contact-section section black" id="contact">
+	<div class="contact-section-title section-title white">
 		Contact Us
 	</div>
 
 	<%= simple_form_for @contact_form do |f| %>
-		<%= f.input :name, :required => true %>
+		<%= f.input :name, label: "Your name" %>
+		<%= f.input :email, label: "Your email" %>
+		<%= f.label :message, "Your message" %>
+		<%= f.text_area :message %>
 		<%= f.button :submit, "Send message" %>
 	<% end %>
 	
