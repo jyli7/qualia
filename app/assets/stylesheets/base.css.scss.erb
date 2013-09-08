@@ -100,7 +100,7 @@ header {
 }
 
 .section {
-	padding: 125px 0 140px 0;
+	padding: 115px 0 140px 0;
 	&.black {
 		background-color: #18181C;
 	}
@@ -250,6 +250,10 @@ header {
 		}
 	}
 
+	textarea {
+		resize: none;
+	}
+
 	input.button {
 		padding: 9px 0 20px 0;
 		margin: 0px auto;
@@ -258,6 +262,7 @@ header {
 		opacity: 0.8;
 		border-radius: 0px;
 		cursor: pointer;
+		color: #202020;
 		@include transition(opacity 0.4s ease-out);
 		&:hover {
 			opacity: 1;
@@ -268,4 +273,23 @@ header {
 	#contact_form_message {
 		height: 200px;
 	}
+}
+
+.success-msg {
+	display: none;
+	width: 675px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 80px;
+	line-height: 115px;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 1.8px;
+	height: 250px;
+	margin-top: 75px;
+	color: white;
+	font-weight: 200;
+}
+
+.contact-form-wrapper {
+	height: 530px;
 }

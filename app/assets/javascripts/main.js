@@ -26,4 +26,10 @@ $(function () {
 			}
 		});
 	});
+
+	$('.contact_form .button').on('click', function () {
+		$('.contact_form').fadeOut(function () {
+			$('.success-msg').fadeIn();
+		});
+	});
 });

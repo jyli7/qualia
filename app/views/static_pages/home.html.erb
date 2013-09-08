@@ -51,12 +51,15 @@
 		Contact Us
 	</div>
 
-	<%= simple_form_for @contact_form do |f| %>
-		<%= f.input :name, label: "Your name" %>
-		<%= f.input :email, label: "Your email" %>
-		<%= f.label :message, "Your message" %>
-		<%= f.text_area :message %>
-		<%= f.button :submit, "Send message" %>
-	<% end %>
-	
+	<div class="contact-form-wrapper">
+		<%= simple_form_for @contact_form, remote: true do |f| %>
+			<%= f.input :name, label: "Your name" %>
+			<%= f.input :email, label: "Your email" %>
+			<%= f.label :message, "Your message" %>
+			<%= f.text_area :message %>
+			<%= f.button :submit, "Send message" %>
+		<% end %>
+
+		<div class="success-msg">Thanks for the message! We'll get back to you right away.</div>
+	</div>
 </section>
