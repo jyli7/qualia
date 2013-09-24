@@ -26,7 +26,7 @@
 	<div class="photo-container">
 		<% @team_members.each do |member| %>
 			<div class="photo-port" title="" data-name="<%= member[:name] %>" data-desc="<%= member[:desc] %>">
-				<a href="#"><img class="photo" src="<%= asset_path(member[:image]) %>"></a>
+				<a href="<%= member[:url] %>"><img class="photo" src="<%= asset_path(member[:image]) %>"></a>
 			</div>
 		<% end %>
 	</div>
